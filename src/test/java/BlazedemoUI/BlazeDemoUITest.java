@@ -53,6 +53,7 @@ public class BlazeDemoUITest {
 
     @BeforeTest
     public void setExtent() throws Exception{
+        try {
         htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/BlazeDemoReport.html");
         htmlReporter.config().setTheme(Theme.STANDARD);
         htmlReporter.config().setDocumentTitle("Automation Report");
@@ -62,7 +63,9 @@ public class BlazeDemoUITest {
         extentReports.setSystemInfo("HostName", "LocalHost");
         extentReports.setSystemInfo("Tester Name", "Yamini");
         extentReports.setSystemInfo("Browser Name", "Chrome Browser");
-
+        } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     @AfterTest
@@ -109,15 +112,20 @@ public class BlazeDemoUITest {
 
     @Test(priority =0)
     public void verifyBlazeDemoTitle() throws Exception{
+        try {
         extentTest = extentReports.createTest("verifyBlazeDemoTitle");
         String title = driver.getTitle();
         System.out.println(title);
         Assert.assertEquals(title, "BlazeDemo", "BlazeDemo title was verified");
+         } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 
     @Test(priority=1)
   public void submitFlightSearchDetails() throws Exception {
+      try {
         extentTest = extentReports.createTest("submitFlightSearchDetails");
         Thread.sleep(2000);
         WT_BlazeDemo_submitFlightSearch.click();
@@ -126,21 +134,27 @@ public class BlazeDemoUITest {
         String title = driver.getTitle();
         System.out.println(title);
         Assert.assertEquals(title, "BlazeDemo - reserve", "BlazeDemo Reserve title was verified");
-
+         } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     @Test(priority=2, dependsOnMethods = {"submitFlightSearchDetails"})
-    public void chooseTheflightSuccessfully() throws Exception{
+    public void chooseTheflightSuccessfully() throws Exception {
+        try {
         extentTest = extentReports.createTest("chooseTheflightSuccessfully");
         WT_BlazeDemo_chooseFlight.submit();
         Thread.sleep(2000);
         String title = driver.getTitle();
         Assert.assertEquals(title, "BlazeDemo Purchase", "BlazeDemo Purchase title was verified");
-
+         } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     @Test(priority=3, dependsOnMethods = {"submitFlightSearchDetails", "chooseTheflightSuccessfully"})
     public void submitPurchaseDetailsVerifyConfirmationId() throws Exception {
+        try {
         extentTest = extentReports.createTest("submitPurchaseDetailsVerifyConfirmationId");
         WT_BlazeDemo_purchaseFlight.submit();
         Thread.sleep(2000);
@@ -148,6 +162,9 @@ public class BlazeDemoUITest {
         Assert.assertEquals(title, "BlazeDemo Purchase", "BlazeDemo Purchase title was verified");
         Assert.assertTrue(WT_BlazeDemo_confirmationId.isDisplayed(),"Confirmation Id is displayed");
         Assert.assertTrue(WT_BlazeDemo_confirmationIDValue.isDisplayed(),"Confirmation Id value is displayed");
+             } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
 
