@@ -1,0 +1,36 @@
+<component name="libraryTable">
+  <library name="io.cucumber:cucumber-java:6.10.2" type="repository">
+    <properties maven-id="io.cucumber:cucumber-java:6.10.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-java-6.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-core-6.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-gherkin-6.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-gherkin-messages-6.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/messages-14.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tag-expressions-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-expressions-10.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/datatable-3.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-plugin-6.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/docstring-6.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/html-formatter-12.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/create-meta-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apiguardian-api-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-java-6.10.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-core-6.10.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-gherkin-6.10.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-gherkin-messages-6.10.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/messages-14.0.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tag-expressions-3.0.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-expressions-10.3.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/datatable-3.5.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cucumber-plugin-6.10.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/docstring-6.10.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/html-formatter-12.0.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/create-meta-3.0.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apiguardian-api-1.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
