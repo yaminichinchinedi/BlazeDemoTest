@@ -18,7 +18,8 @@ public class APITest {
     ResponseBody respBody = null;
 
     @BeforeTest
-    public void invokeSuccessResponse() {
+    public void invokeSuccessResponse() throws Exception{
+        try {
         //specific base uir
         RestAssured.baseURI = "https://api.spacexdata.com/v4";
 
@@ -28,22 +29,30 @@ public class APITest {
         //response object
         response = requestObject.request(Method.GET, "/launches/latest");
         ResponseBody respBody = response.getBody();
+             } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 
     //Verify the Response Header Status code 200 which is Success
     @Test(priority = 1)
-    public void verifyResponseHeaderLatestLaunch() {
+    public void verifyResponseHeaderLatestLaunch() throws Exception {
+        try {
         int statuscode = response.getStatusCode();
         String statusline = response.statusLine().toString();
         Assert.assertEquals(statuscode, 200, "Correct status code is returned which is success");
         Assert.assertTrue(statusline.contains("OK"), "Correct Status line returned");
         System.out.println("Response Status is: " + statuscode + " " + statusline);
+             } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     //Verify the Response Body contains id information, when successfully response is returned
     @Test(priority = 2)
-    public void verifyIdLatestLaunch() {
+    public void verifyIdLatestLaunch() throws Exception{
+        try {
         String id = "";
         JsonPath json = response.jsonPath();
         id = json.get("id").toString();
@@ -52,10 +61,14 @@ public class APITest {
             System.out.println("Latest Launch Id is: " + id);
         } else
             Assert.assertTrue(id.isEmpty(), "Empty Id returned");
+         } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     @Test(priority = 3)
-    public void verifyLatestLaunchPadDetails() {
+    public void verifyLatestLaunchPadDetails() throws Exception {
+        try {
         String launchpadid = "";
         String launchpaddetails = "";
         JsonPath json = response.jsonPath();
@@ -72,19 +85,26 @@ public class APITest {
             System.out.println("LaunchPad Details are: " + launchpaddetails);
         } else
             Assert.assertTrue(launchpaddetails.isEmpty(), "Empty Launch Pad Details returned");
+             } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     //Prints entire Json Response Body
     @Test(priority = 4)
-    public void getResponseTime() {
-
+    public void getResponseTime() throws Exception{
+       try {
         long time = response.getTime();
         System.out.println("The Response time is: " + time);
+            } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     //Prints entire Json Response Body
     @Test(priority = 5)
-    public void printLatestLaunches() {
+    public void printLatestLaunches() throws Exception {
+        try {
         String body = "";
         List<JsonPath> jsonpathList;
 
@@ -93,13 +113,16 @@ public class APITest {
             body = respBody.asString();
             if (body != null && body != "" && !body.isEmpty())
                 System.out.println("The Response Body is: " + body);
-
+        }
+             } catch(Exception e) {
+            System.out.println(e.getMessage());
         }
     }
 
 
     @AfterTest
-    public void failureScenarioInvalidMethod() {
+    public void failureScenarioInvalidMethod() throws Exception{
+        try {
         //specific base uir
         RestAssured.baseURI = "https://api.spacexdata.com/v4";
 
@@ -114,5 +137,9 @@ public class APITest {
         boolean statusline = responsStatusLine.contains("Not Found");
         Assert.assertEquals(responseStatuscode, 404, "Invalid Method Type called");
         Assert.assertTrue(statusline, "Invalid Method called hence returned Not Found Response in status line");
+     
+         } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
