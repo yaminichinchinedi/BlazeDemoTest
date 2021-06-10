@@ -52,7 +52,7 @@ public class BlazeDemoUITest {
     private WebElement WT_BlazeDemo_confirmationIDValue;
 
     @BeforeTest
-    public void setExtent() {
+    public void setExtent() throws Exception{
         htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/BlazeDemoReport.html");
         htmlReporter.config().setTheme(Theme.STANDARD);
         htmlReporter.config().setDocumentTitle("Automation Report");
@@ -108,7 +108,7 @@ public class BlazeDemoUITest {
     }
 
     @Test(priority =0)
-    public void verifyBlazeDemoTitle() throws Throwable{
+    public void verifyBlazeDemoTitle() throws Exception{
         extentTest = extentReports.createTest("verifyBlazeDemoTitle");
         String title = driver.getTitle();
         System.out.println(title);
@@ -117,7 +117,7 @@ public class BlazeDemoUITest {
     }
 
     @Test(priority=1)
-  public void submitFlightSearchDetails() throws InterruptedException {
+  public void submitFlightSearchDetails() throws Exception {
         extentTest = extentReports.createTest("submitFlightSearchDetails");
         Thread.sleep(2000);
         WT_BlazeDemo_submitFlightSearch.click();
@@ -130,7 +130,7 @@ public class BlazeDemoUITest {
     }
 
     @Test(priority=2, dependsOnMethods = {"submitFlightSearchDetails"})
-    public void chooseTheflightSuccessfully() throws InterruptedException {
+    public void chooseTheflightSuccessfully() throws Exception{
         extentTest = extentReports.createTest("chooseTheflightSuccessfully");
         WT_BlazeDemo_chooseFlight.submit();
         Thread.sleep(2000);
@@ -140,7 +140,7 @@ public class BlazeDemoUITest {
     }
 
     @Test(priority=3, dependsOnMethods = {"submitFlightSearchDetails", "chooseTheflightSuccessfully"})
-    public void submitPurchaseDetailsVerifyConfirmationId() throws InterruptedException {
+    public void submitPurchaseDetailsVerifyConfirmationId() throws Exception {
         extentTest = extentReports.createTest("submitPurchaseDetailsVerifyConfirmationId");
         WT_BlazeDemo_purchaseFlight.submit();
         Thread.sleep(2000);
