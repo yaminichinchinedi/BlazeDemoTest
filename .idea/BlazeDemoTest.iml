@@ -130,8 +130,5 @@
     <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-scratchpad:3.14" level="project" />
-    <orderEntry type="library" name="Maven: io.github.bonigarcia:webdrivermanager:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.rauschig:jarchivelib:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.14" level="project" />
   </component>
 </module>

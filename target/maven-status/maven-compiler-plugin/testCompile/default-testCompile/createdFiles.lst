@@ -1,3 +1,4 @@
-Utilities/extentReport.class
 BlazedemoUI/BlazeDemoUITest.class
 RocketLaunchAPI/APITest.class
+Utilities/extentReport.class
+UIPageObjects/BlazeDemoPageObjects.class

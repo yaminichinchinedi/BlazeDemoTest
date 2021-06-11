@@ -8,6 +8,7 @@ public class extentReport implements ITestListener {
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+        System.out.println("Test Method Failed: " + result.getName());
     }
 
     @Override
@@ -46,6 +47,5 @@ public class extentReport implements ITestListener {
         System.out.println("The Total no of Passed Tests are: " + context.getPassedTests().size());
         System.out.println("The Total no of Failed Tests are: " + context.getFailedTests().size());
         System.out.println("The STotal no of kipped Tests are: " + context.getSkippedTests().size());
-
     }
 }

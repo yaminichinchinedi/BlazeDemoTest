@@ -5,7 +5,7 @@
     <classes>
       <class name="BlazedemoUI.BlazeDemoUITest">
         <methods>
-          <include name="closeBrowser"/>
+          <include name="closeAllBrowsers"/>
           <include name="endReport"/>
           <include name="submitFlightSearchDetails"/>
           <include name="setExtent"/>

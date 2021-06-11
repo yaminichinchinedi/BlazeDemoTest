@@ -8,14 +8,14 @@
     <classes>
       <class name="BlazedemoUI.BlazeDemoUITest">
         <methods>
-          <include name="verifyBlazeDemoTitle"/>
+          <include name="closeAllBrowsers"/>
           <include name="submitPurchaseDetailsVerifyConfirmationId"/>
           <include name="chooseTheflightSuccessfully"/>
-          <include name="closeBrowser"/>
           <include name="endReport"/>
           <include name="submitFlightSearchDetails"/>
           <include name="setExtent"/>
           <include name="setUp"/>
+          <include name="submitWithoutPurchaseDetailsVerifyConfirmationId"/>
         </methods>
       </class> <!-- BlazedemoUI.BlazeDemoUITest -->
     </classes>
