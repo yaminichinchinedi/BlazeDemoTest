@@ -1,5 +1,9 @@
-/Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/Utilities/RetrieveTestData.java
-/Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/UIPageObjects/BlazeDemoPageObjects.java
-/Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/BlazedemoUI/BlazeDemoUITest.java
+/Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/BlazedemoUI/UIPageObjects/SubmitPurchaseDetailsPage.java
+/Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/BlazedemoUI/DataRetrieveImpl/UIDataRetrieveImpl.java
+/Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/BlazedemoUI/DataObjects/PurchaseData.java
+/Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/BlazedemoUI/UIPageObjects/ChooseFlightPage.java
 /Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/RocketLaunchAPI/APITest.java
+/Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/BlazedemoUI/UITestClasses/BlazeDemoUITest.java
+/Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/BlazedemoUI/UIPageObjects/BlazeDemoHomePage.java
 /Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/Utilities/extentReport.java
+/Users/ych/IdeaProjects/BlazeDemoTest/src/test/java/BlazedemoUI/DataRetrieve/UIDataRetrieve.java

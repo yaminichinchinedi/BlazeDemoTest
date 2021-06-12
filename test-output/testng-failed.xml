@@ -6,7 +6,7 @@
   </listeners>
   <test thread-count="5" name="/Users/ych/IdeaProjects/BlazeDemoTest(failed)">
     <classes>
-      <class name="BlazedemoUI.BlazeDemoUITest">
+      <class name="BlazedemoUI.UITestClasses.BlazeDemoUITest">
         <methods>
           <include name="closeAllBrowsers"/>
           <include name="submitPurchaseDetailsVerifyConfirmationId"/>
@@ -17,7 +17,7 @@
           <include name="setUp"/>
           <include name="submitWithoutPurchaseDetailsVerifyConfirmationId"/>
         </methods>
-      </class> <!-- BlazedemoUI.BlazeDemoUITest -->
+      </class> <!-- BlazedemoUI.UITestClasses.BlazeDemoUITest -->
     </classes>
   </test> <!-- /Users/ych/IdeaProjects/BlazeDemoTest(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

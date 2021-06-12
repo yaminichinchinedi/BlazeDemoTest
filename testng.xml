@@ -4,18 +4,22 @@
     <listeners>
         <listener class-name="Utilities.extentReport"></listener>
     </listeners>
+    <test verbose="2" preserve-order="true" name="/Users/ych/IdeaProjects/APITest">
+    <classes>
+    <class name="RocketLaunchAPI.APITest">
+        <methods>
+            <include name="verifyResponseHeaderLatestLaunch"/>
+            <include name="verifyIdLatestLaunch"/>
+            <include name="verifyLatestLaunchPadDetails"/>
+            <include name="getResponseTime"/>
+            <include name="printLatestLaunches"/>
+        </methods>
+    </class>
+    </classes>
+    </test>
     <test verbose="2" preserve-order="true" name="/Users/ych/IdeaProjects/BlazeDemoTest">
         <classes>
-            <class name="RocketLaunchAPI.APITest">
-                <methods>
-                    <include name="verifyResponseHeaderLatestLaunch"/>
-                    <include name="verifyIdLatestLaunch"/>
-                    <include name="verifyLatestLaunchPadDetails"/>
-                    <include name="getResponseTime"/>
-                    <include name="printLatestLaunches"/>
-                </methods>
-            </class>
-            <class name ="BlazedemoUI.BlazeDemoUITest"></class>
+            <class name ="BlazedemoUI.UITestClasses.BlazeDemoUITest"></class>
         </classes>
     </test>
 </suite>

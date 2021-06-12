@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="BlazeDemoTest(failed)">
     <classes>
-      <class name="BlazedemoUI.BlazeDemoUITest">
+      <class name="BlazedemoUI.UITestClasses.BlazeDemoUITest">
         <methods>
           <include name="closeAllBrowsers"/>
           <include name="endReport"/>
@@ -11,7 +11,7 @@
           <include name="setExtent"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- BlazedemoUI.BlazeDemoUITest -->
+      </class> <!-- BlazedemoUI.UITestClasses.BlazeDemoUITest -->
     </classes>
   </test> <!-- BlazeDemoTest(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

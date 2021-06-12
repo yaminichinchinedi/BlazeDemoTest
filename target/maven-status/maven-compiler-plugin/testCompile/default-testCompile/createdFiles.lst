@@ -1,4 +1,9 @@
-BlazedemoUI/BlazeDemoUITest.class
+BlazedemoUI/UIPageObjects/BlazeDemoHomePage.class
+BlazedemoUI/DataObjects/PurchaseData.class
+BlazedemoUI/UITestClasses/BlazeDemoUITest.class
+BlazedemoUI/UIPageObjects/SubmitPurchaseDetailsPage.class
+BlazedemoUI/DataRetrieveImpl/UIDataRetrieveImpl.class
+BlazedemoUI/UIPageObjects/ChooseFlightPage.class
+BlazedemoUI/DataRetrieve/UIDataRetrieve.class
 RocketLaunchAPI/APITest.class
 Utilities/extentReport.class
-UIPageObjects/BlazeDemoPageObjects.class
